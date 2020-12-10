@@ -1,4 +1,4 @@
-# chari-firmware-ble
+# ble_peripheral_soil_moisture
 
 ## SDKと開発環境の構築
 本コードはnRF5 SDK v16.0.0を使用しています。
