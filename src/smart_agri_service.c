@@ -655,12 +655,10 @@ static void ble_soil_moisture_status( void )
         send_data[i] = 0x00;
     }
     
-    send_data[BLE_COMID_BYTE] = BLE_COMID_SOIL_MOISTURE;
-
     for (int i = 0; i < 4; i++)
     {
-        send_data[BLE_COMDATA_BYTE + 2*i + 0] = (uint8_t)((0xFF00 & soil_moisture_value[i]) >> 8);
-        send_data[BLE_COMDATA_BYTE + 2*i + 1] = (uint8_t)(0x00FF & soil_moisture_value[i]);
+        send_data[2*i + 0] = (uint8_t)((0xFF00 & soil_moisture_value[i]) >> 8);
+        send_data[2*i + 1] = (uint8_t)(0x00FF & soil_moisture_value[i]);
     }
 
     ble_indication_command(BLE_COMID_SOIL_MOISTURE, &send_data[0]);
