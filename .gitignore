@@ -13,6 +13,8 @@
 /dfu_public_key.c
 /package.bat
 /private.key
-/pca10056
 /pca10040/s132/ses/ble_periperal_soil_s132_Release.jlink
 /pca10040/s132/ses/ble_peripheral_soil_moisture_s132_Release.jlink
+/pca10056/s140/ses/ble_peripheral_soil_moisture_s140.jlink
+/pca10056/s140/ses/ble_periperal_base_s140_Release.jlink
+/pca10056/s140/ses/ble_peripheral_soil_moisture_s140.emSession

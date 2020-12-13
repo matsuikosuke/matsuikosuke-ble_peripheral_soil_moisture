@@ -9,6 +9,5 @@
 
 
 //AD
-#define SOIL_MOISTURE_PIN	( 2 ) //AN0
 
 #endif    /* IF_H */
